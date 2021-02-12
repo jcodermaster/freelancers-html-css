@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/foundation.css">
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
   </head>
@@ -80,12 +81,14 @@
                               <form>
                                 <div class="inner-search-form">
                                   <input type="text" name="search" placeholder="Search">
-                                  <select name="category">
+                                  <input type="text" name="category" placeholder="Category" id="category-hero">
+                                  <input type="text" name="postal-code" placeholder="Postal Code" id="postalcode-hero">
+                                  <!--<select name="category">
                                     <option value="category">Category</option>
                                   </select>
                                   <select name="City">
                                     <option value="category">City</option>
-                                  </select>
+                                  </select>-->
                                 </div>
                                 <div class="search-form-footer">
                                 <input type="submit" name="search" value="Search">
@@ -98,12 +101,8 @@
                               <form>
                                 <div class="inner-search-form">
                                   <input type="text" name="search" placeholder="Search">
-                                  <select name="category">
-                                    <option value="category">Category</option>
-                                  </select>
-                                  <select name="category">
-                                    <option value="category">City</option>
-                                  </select>
+                                  <input type="text" name="category" placeholder="Category" id="category-freelancer-hero">
+                                  <input type="text" name="postal-code" placeholder="Postal Code" id="postalcode-freelancer-hero">
                                 </div>
                                 <div class="search-form-footer">
                                 <input type="submit" name="search" value="Search">
@@ -594,8 +593,71 @@ velit auctor aliquet. Aenean</p>
     </div>
 
     <script src="assets/js/vendor/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="assets/js/vendor/jquery-ui.js"></script>
     <script src="assets/js/vendor/what-input.js"></script>
     <script src="assets/js/vendor/foundation.js"></script>
     <script src="assets/js/app.js"></script>
+    
+    <script>
+      $( function() {
+        var availableTags = [
+          "ActionScript",
+          "AppleScript",
+          "Asp",
+          "BASIC",
+          "C",
+          "C++",
+          "Clojure",
+          "COBOL",
+          "ColdFusion",
+          "Erlang",
+          "Fortran",
+          "Groovy",
+          "Haskell",
+          "Java",
+          "JavaScript",
+          "Lisp",
+          "Perl",
+          "PHP",
+          "Python",
+          "Ruby",
+          "Scala",
+          "Scheme"
+        ];
+        var availablePostcode =[
+          "6710",
+          "6711",
+          "6712",
+          "6713",
+          "6714",
+          "6715",
+          "6716",
+          "6717",
+          "6718",
+          "6719",
+          "6720",
+          "6721",
+          "6722",
+          "6723",
+          "6724",
+          "6725",
+        ]
+
+        $( "#category-hero" ).autocomplete({
+          source: availableTags
+        });
+        $( "#postalcode-hero" ).autocomplete({
+          source: availablePostcode
+        });
+        $( "#category-freelancer-hero" ).autocomplete({
+          source: availableTags
+        });
+        $( "#postalcode-freelancer-hero" ).autocomplete({
+          source: availablePostcode
+        });
+      } );
+      </script>
+
   </body>
 </html>
