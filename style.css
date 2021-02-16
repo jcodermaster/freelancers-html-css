@@ -1924,6 +1924,88 @@ form.profile-form-container textarea {
 }
 
 /*****************************
+ HIRE FOR WORK POPUP
+*****************************/
+.hire-popup-container {
+  width: 100%;
+  display: flex;
+  padding: 30px 0px;
+}
+.hire-popup-image {
+  width: 35%;
+}
+.hire-popup-name-tile {
+  width: 65%;
+  padding-top: 50px;
+}
+.hire-popup-name-tile p {
+  font-size: 14px !important;
+  color: 3363636 !important;
+}
+.hire-popup-number-hour p {
+  font-size: 14px;
+}
+.hire-popup-name-tile h3 {
+  font-size: 28px;
+  margin-bottom: 0px;
+  color: #3363636 !important;
+}
+.hire-popup-rating .star-icon p {
+  font-size: 12px;
+}
+.hire-popup-rating ul.star-icon.menu li:first-child {
+  width: 57%;
+  font-size: 14px;
+}
+.hire-popup-rating ul.star-icon.menu li:last-child {
+  margin-left: 10px;
+}
+.hire-popup-rating ul.star-icon.menu li {
+  margin-right: 10px;
+}
+.hire-popup-rating ul.star-icon {
+  border-bottom: 0px !important;
+}
+.hire-popup-rating,
+.hire-popup-job-title,
+.hire-popup-number-hour {
+  padding: 30px 0px 10px 0px;
+  border-bottom: 1px solid #ebebeb;
+}
+.hire-popup-button {
+  padding: 30px 0px;
+  text-align: center;
+  width: 100%;
+}
+.hire-popup-job-title p,
+.hire-popup-number-hour p {
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+.hire-popup-job-title h4,
+.hire-popup-name-tile h3 {
+  font-size: 18px;
+}
+.hire-popup-four-hour li {
+  display: inline-block;
+  width: 49%;
+  font-size: 18px;
+  font-weight: 600;
+}
+.hire-popup-section-container {
+  border-radius: 20px !important;
+  box-shadow: 0px 2px 2px 2px #88888840;
+}
+.hire-popup-section-container {
+  height: 100vh;
+  padding: 20px 50px !important;
+}
+.hire-popup-button a {
+  color: #fff !important;
+  font-size: 20px;
+  padding: 8px 25px !important;
+}
+/*****************************
 # MOBILE VIEW ONLY
 *****************************/
 
@@ -2184,9 +2266,6 @@ form.profile-form-container textarea {
   .education-image {
     width: 25% !important;
   }
-  .user-profile {
-    display: flex;
-  }
   .account-container {
     display: flex;
     width: 100%;
@@ -2226,6 +2305,30 @@ form.profile-form-container textarea {
   .name-right-message {
     font-size: 10px !important;
     margin-left: 10px;
+  }
+  .hire-popup-name-tile {
+    width: 40%;
+    padding-top: 20px;
+  }
+  .hire-popup-image {
+    width: 35%;
+    margin-right: 20px;
+  }
+  .hire-popup-rating ul.star-icon.menu li {
+    margin-right: 13px;
+    display: inline;
+  }
+  .hire-popup-rating ul.star-icon.menu li:last-child {
+    margin-left: 10px;
+  }
+  .hire-popup-rating ul.star-icon.menu li:first-child {
+    font-size: 14px;
+    width: 47px !important;
+  }
+  .hire-popup-rating ul.star-icon {
+    border-bottom: 0px !important;
+    width: 100%;
+    display: flex;
   }
 }
 

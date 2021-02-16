@@ -37,7 +37,6 @@
                 <div class="account-container">
                    <div class="notification">
 
-
                      <span class="button bottom message-container" type="button" data-toggle="inbox-dropdown-bottom-right"><i class="fas fa-comment-dots"></i></span>
                         <div class="dropdown-pane dropdown-container-inbox" id="inbox-dropdown-bottom-right" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment="right" id="example-dropdown-bottom-right">
                             <div class="grid-container">
@@ -59,7 +58,6 @@
                                 </div>
 
                                <div class="main-inbox-content-container">
-
                                  <div class="reviews-row reviews-column-section">
                                       <div class="review-left">
                                          <img src="assets/img/inbox1.jpg" alt="">
@@ -150,7 +148,7 @@
                                       </div>
                                       <div class="name-right-message">
                                         <p><b>Melissa Rain</b></p>
-                                       </div>
+                                      </div>
                                     </div>
                                     <div class="right-content-message">
                                       <div class="star-container">
@@ -207,7 +205,6 @@
                               </div>
                             </div>
                         </div>
-                  <div class="user-profile">
                     <div class="user-profile">
                     <img src="assets/img/profile-img.jpg" alt="" class="mobile-adjustment-image"> 
                       <span>Jane Do</span> &nbsp; &nbsp;
@@ -237,7 +234,6 @@
                               </div>
                             </div>
                         </div>
-                  </div>
                   </div>
                 </div>
               </div>
@@ -308,7 +304,7 @@
                 <p class="per-hour">$10.00 per hour</p>
               </div>
               <div class="medium-3 cell text-center">
-                <a href="#" class="button">Hire For Work</a>
+                <a href="#" class="button" data-toggle="hire-for-work-popup">Hire For Work</a>
               </div>
             </div>
           </div>
@@ -406,7 +402,6 @@
            </div>
           </div>
         </div>
-      </div>
     </section>
     <section class="education-work-section page-section pb-0">
       <div class="grid-container">
@@ -810,10 +805,11 @@ velit auctor aliquet. Aenean</p>
               <div class="user-profile6-button-plus skill-btn">
                 <span><i class="fas fa-plus"></i></span>
               </div>
-          </div>
+            </div>
            <div id="selected-skills"></div>
-        </div>
+          </div>
       </div>
+    </div>
     </section>
     <button class="close-button" data-close aria-label="Close reveal" type="button">
       <span aria-hidden="true">&times;</span>
@@ -1110,11 +1106,58 @@ velit auctor aliquet. Aenean</p>
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-    </div>
-    </div>
+      </div>
+      </div>
     </section>
+  </div>
+
+    <div class="reveal hire-popup-section-container" id="hire-for-work-popup" data-reveal data-overlay="false">
+      <a href="#"><img src="assets/img/hire_popup_icon.jpg"></a>
+
+      <div class="hire-popup-container">
+          <div class="hire-popup-image">
+            <img src="assets/img/user-image.png">
+          </div>
+          <div class="hire-popup-name-tile">
+            <h3>Jane Do</h3>
+            <p>Bartender</p>
+          </div>
+      </div>
+
+      <div class="hire-popup-rating">
+        <ul class="star-icon menu">
+          <li>Rating</li>
+          <li><i class="fas fa-star"></i></li>
+          <li><i class="fas fa-star"></i></li>
+          <li><i class="fas fa-star"></i></li>
+          <li><i class="fas fa-star"></i></li>
+          <li><i class="fas fa-star"></i></li>
+          <li><p>4 of 5</p></li>
+        </ul>
+      </div>
+
+      <div class="hire-popup-job-title">
+        <p>Job Title</p>
+        <h3>I need a bartender</h3>
+      </div>
+
+      <div class="hire-popup-number-hour">
+        <p>Number Of Hours</p>
+        <ul class="no-bullet hire-popup-four-hour">
+          <li>4 Hours</li>
+          <li class="text-right">£1 / hr <span class="right tooltip-container"  data-tooltip tabindex="1" title="This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auct"><img src="assets/img/hire_popup_mark.jpg"></span></li>
+        </ul>
+      </div>
+
+      <div class="hire-popup-button">
+        <button><a href="#" class="text-center">Pay Now</a></button>
+      </div>
+
+      <button class="close-button" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
     </div>
-      
+   
 
     <script src="assets/js/vendor/jquery.js"></script>
     <script src="assets/js/vendor/what-input.js"></script>
