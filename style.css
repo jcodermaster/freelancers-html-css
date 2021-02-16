@@ -1948,7 +1948,7 @@ form.profile-form-container textarea {
 .hire-popup-name-tile h3 {
   font-size: 28px;
   margin-bottom: 0px;
-  color: #3363636 !important;
+  color: #336363 !important;
 }
 .hire-popup-rating .star-icon p {
   font-size: 12px;
@@ -2006,9 +2006,8 @@ form.profile-form-container textarea {
   padding: 8px 25px !important;
 }
 a.hire-link-comment span i {
-    color: #b2b2b2!important;
-    font-size: 30px;
-
+  color: #b2b2b2 !important;
+  font-size: 30px;
 }
 /*****************************
 # MOBILE VIEW ONLY
@@ -2335,8 +2334,8 @@ a.hire-link-comment span i {
     width: 100%;
     display: flex;
   }
-  .hire-popup-section-container{
-    margin:0px 5px!important;
+  .hire-popup-section-container {
+    margin: 0px 5px !important;
   }
 }
 
