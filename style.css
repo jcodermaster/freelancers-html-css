@@ -2005,6 +2005,11 @@ form.profile-form-container textarea {
   font-size: 20px;
   padding: 8px 25px !important;
 }
+a.hire-link-comment span i {
+    color: #b2b2b2!important;
+    font-size: 30px;
+
+}
 /*****************************
 # MOBILE VIEW ONLY
 *****************************/
@@ -2329,6 +2334,9 @@ form.profile-form-container textarea {
     border-bottom: 0px !important;
     width: 100%;
     display: flex;
+  }
+  .hire-popup-section-container{
+    margin:0px 5px!important;
   }
 }
 
